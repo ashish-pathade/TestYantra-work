@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="2" parallel="tests">
+    <test name="test-runner-1">
+        <classes>
+            <class name="com.practice.TestNgPriority"/>
+        </classes>
+    </test>
+    <test name="test-runner-2">
+        <classes>
+            <class name="com.practice.TestNgOrder"/>
+            <class name="com.practice.TestNgLogin"/>
+        </classes>
+    </test>
+</suite>

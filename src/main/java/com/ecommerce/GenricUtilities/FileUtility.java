@@ -3,6 +3,7 @@ package com.ecommerce.GenricUtilities;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Properties;
 
 public class FileUtility {
@@ -15,9 +16,10 @@ public class FileUtility {
      * @return
      * @throws FileNotFoundException
      */
-    public String getDataFromFile(String key) throws FileNotFoundException {
+    public String getDataFromFile(String key) throws IOException {
     FileInputStream fis = new FileInputStream(IPathConstants.filePath);
     Properties properties = new Properties();
+    properties.load(fis);
     return properties.getProperty(key);
 }
 }

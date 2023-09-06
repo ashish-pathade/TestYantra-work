@@ -17,7 +17,6 @@ public class WriteDataINExcel {
        sheet.getRow(4).createCell(1).setCellValue("abc");
         FileOutputStream fos=new FileOutputStream(".\\src\\test\\resources\\demoCommon.xlsx");
         workbook.write(fos);
-        fos.flush();
         workbook.close();
 
     }

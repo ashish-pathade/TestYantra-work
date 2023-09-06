@@ -26,7 +26,7 @@ public class DatabaseUtility {
     /**
      * @ this method is used to execute the query
      * @author Ashish
-     * @param query
+     * @paramquery
      * @param columnNum
      * @param expectedData
      * @throws SQLException
