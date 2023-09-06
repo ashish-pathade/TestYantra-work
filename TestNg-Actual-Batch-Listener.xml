@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="1" parallel="tests">
+    <listeners>
+        <listener class-name="com.ecommerce.GenricUtilities.ItransformerImpl"/>
+    </listeners>
+    <test  preserve-order="true" name="Admin module tests">
+        <classes>
+            <class name="AdminModule.CreateCategoryTestC"/>
+            <class name="AdminModule.VerifyingUserTestC"/>
+            <class name="UserModule.AddWishlistTestC"/>
+            <class name="UserModule.PurchaseProductTestC"/>
+            <class name="UserModule.UpdateAddressTestC"/>
+            <class name="UserModule.VerifyingPaymentPageTestC"/>
+            <class name="UserModule.VerifyingSignUpTestC"/>
+        </classes>
+    </test>
+</suite>

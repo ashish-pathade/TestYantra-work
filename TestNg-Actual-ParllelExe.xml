@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="2" parallel="tests">
+    <test  name="Admin module tests" >
+        <classes>
+            <class name="AdminModule.CreateCategoryTestC"/>
+            <class name="AdminModule.VerifyingUserTestC"/>
+        </classes>
+    </test>
+    <test name="User module tests" >
+        <classes>
+            <class name="UserModule.AddWishlistTestC"/>
+            <class name="UserModule.PurchaseProductTestC"/>
+            <class name="UserModule.UpdateAddressTestC"/>
+            <class name="UserModule.VerifyingPaymentPageTestC"/>
+            <class name="UserModule.VerifyingSignUpTestC"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/ASHISH/Desktop/com.ecommerce.tyss/Testng-group-execution.xml">
+        <classes/>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/ASHISH/Desktop/com.ecommerce.tyss/src/test/java/com/practice/TestNgOrder.java">
+        <classes>
+            <class name="com.practice.TestNgOrder">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/ASHISH/Desktop/com.ecommerce.tyss/src/test/java/com/practice/TestNgPriority.java">
+        <classes>
+            <class name="com.practice.TestNgPriority">
+                <methods>
+                    <include name="createCat"/>
+                    <include name="createSubcategory"/>
+                    <include name="createProduct"/>
+                    <include name="purchase"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
